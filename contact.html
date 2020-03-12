@@ -2,6 +2,7 @@
 <!-- Live Server -->
 <html lang="en">
 <head>
+    <link rel="icon" href="./asset/image/MyIcon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yafet L.</title>
@@ -9,8 +10,11 @@
 <body>
  <!-- Let's start -->
 <hr>
+<p align = "center">
 <a href="index.html">Home</a> |
-<a href="contact.html" target="blanck">Contact</a>
+<a href="contact.html" target="blanck">Contact</a> |
+<a href="Galary.html" target="blanck">Galary</a>
+</p>
 <hr>
 
 
@@ -20,30 +24,72 @@
          <td>
             <h1>Yafet Lulseged</h1>
             <h3>Student, ITSC</h3>
-            <p>I am Yafet L. , I am <strong>Java</strong> Developer student
-            who has been  studing Java since <em>5 </em></em5>years. 
-            I am passionate about working in different types of programming language </p>
+            <p>I am Yafet L. , I am <strong>Java</strong> Developer <br> student
+            who has been  studing Java since <br> <em>5 </em></em5> years.
+            I am passionate about working <br>in different types of programming language. </p>
          </td>
      </tr>
  </table>
 <h3>Contact us...</h3>
 <form action="mailto:se.yafet.lulseged@gmail.com" method="POST">
-   <label for="fName">First Name:</label> <input type="text" name="fName" id="fName"><br>
-   <label for="sName">Sure Name:</label> <input type="text" name="sName" id="sName"><br>
-   <label for="eMail">Email:</label> <input type="email" name="eMail" id="eMail"><br>
-   Where are you from:
-   <select name="country" id="">
-       <option value="af">Africa</option>
-       <option value="as">Asia</option>
-       <option value="eu">Europe</option>
-   </select><br>
-   Leave your comment<br>
-   <textarea name="comment" id="comment" cols="30" rows="10"></textarea><br>
-   <input type="submit" value="submit">
+<table>
+<tr>
+    <td>
+        <table>
+            <tr>
+               <td><label for="fName">First Name:</label></td> 
+               <td><input type="text" name="fName" id="fName" required size="25"
+                    pattern="[A-Za-z]{4,8}" title="4 to 8 alphabetic letters"></td> 
+                    <span class="validity"></span>
+            </tr>
+           <tr>
+               <td><label for="sName">Sure Name:</label></td>
+               <td><input type="text" name="sName" id="sName" required size="25"
+                pattern="[A-Za-z]{4,8}" title="4 to 8 alphabetic letters"></td>
+               <span class="validity"></span>
+           </tr>
+           <tr>
+                <td><label for="passW">Password:</label></td>
+                <td><input type="text" name="passW" id="passW" required size="25"
+                    pattern="[A-Za-z1-9]{4,8}" title="4 to 8 non-symbol"></td>
+                <span class="validity"></span>
+            </tr>
+           <tr>
+                <td><label for="eMail">Email:</label> </td>
+                <td><input type="email" name="eMail" id="eMail"></td>
+           </tr>
+           <tr>
+                <td>Where are you from:</td>
+                <td>
+                    <select name="country" id="">
+                        <option value="af">Africa</option>
+                        <option value="as">Asia</option>
+                        <option value="eu">Europe</option>
+                     </select>
+                </td>
+            </tr>
+           <tr><td>
+               Leave your comment
+            </td></tr>
+           <tr><td><textarea name="comment" id="comment" cols="30" rows="10"></textarea></td></tr>
+           <tr><td><input type="submit" value="submit"></td></tr>
+        </table>
+    </td>
+    <td>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>
+                    <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+            </div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+        </div>
+    </td>
+</tr>
+</table>
 </form>
-
 <a href="http:/www.facebook.com" target="blanck">Facebook</a>
 <a href="http:/www.telegram.com" target="blanck">Telegram</a>
-
+<hr>
+<p align="center">© Yafet Lulseged, 2020 | You're looking great today</p>
 </body>
 </html>
